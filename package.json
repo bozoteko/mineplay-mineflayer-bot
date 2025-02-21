@@ -1,0 +1,22 @@
+{
+  "name": "mineflayer-4.26.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@miner-org/mineflayer-baritone": "^0.5.0",
+    "@xboxreplay/xboxlive-auth": "^4.1.0",
+    "axios": "^1.7.9",
+    "chatgpt": "^5.2.5",
+    "mineflayer": "^4.26.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "node-fetch": "^3.3.2",
+    "prismarine-auth": "^2.6.0"
+  }
+}
