@@ -7,7 +7,7 @@ function createBot(host, sessionData = null) {
   // If session data exists, pass it to the bot to reuse the session (authentication).
   const botOptions = {
     host: host,
-    username: 'shenanigansfivem@gmail.com', // Microsoft account email
+    username: 'email@gmail.com', // Microsoft account email
     auth: 'microsoft', // Use Microsoft authentication
     version: '1.21.1', // Specify Minecraft version
     ...(sessionData ? { session: sessionData } : {}), // Reuse session if available
