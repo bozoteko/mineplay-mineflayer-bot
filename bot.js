@@ -44,7 +44,6 @@ function createBot(host, sessionData = null) {
   const unstick = require('./commands/unstick');
   const solve = require('./commands/solve');
   const server = require('./commands/server');
-  const hub = require('./commands/hub');
   const stats = require('./commands/stats');
 
   // Event listener for when the bot spawns (to track the hub status)
@@ -69,12 +68,6 @@ function createBot(host, sessionData = null) {
       if (args[0] === '-server') server(bot, args, createBot); // Pass createBot to the server module
       if (args[0] === '-stats') stats(bot);
       if (args[0] === '-hub' && !isReturningToHub) {
-        console.log('Detected -hub command. Executing hub logic...');
-        isReturningToHub = true; // Set the flag to prevent infinite loops
-        hub(bot, createBot); // Pass bot and createBot to the hub module
-      }
-    } catch (error) {
-      console.error('Error handling command:', error);
     }
   });
 
