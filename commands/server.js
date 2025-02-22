@@ -31,7 +31,7 @@ module.exports = function(bot, args, createBot) {
       bot.removeListener('kicked', onKicked); // Stop listening for kicks
       bot.quit(); // Disconnect from the current server
       setTimeout(() => {
-        createBot('localhost:25575'); // Reconnect to the hub
+        createBot('mc.mineplay.nl'); // Reconnect to the hub
       }, 2000); // Wait 2 seconds before reconnecting
     };
 
@@ -42,7 +42,7 @@ module.exports = function(bot, args, createBot) {
       console.log('Bot disconnected while trying to switch servers. Reconnecting...');
       bot.removeListener('end', onEnd); // Stop listening for disconnections
       setTimeout(() => {
-        createBot('localhost:25575'); // Reconnect to the hub
+        createBot('mc.mineplay.nl'); // Reconnect to the hub
       }, 2000); // Wait 2 seconds before reconnecting
     };
 
